@@ -1,0 +1,29 @@
+{
+  "name": "gl_addtional_assessment_activity",
+  "version": "1.0.0",
+  "description": "Simple Assessment For API With Playwright",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx playwright test tests --project=chromium",
+    "reporter": "npx monocart show-report reporter/index.html",
+    "test": "npm run start && npm run reporter"
+  },
+  "keywords": [
+    "api",
+    "playwright"
+  ],
+  "author": "green lambda",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.24.2",
+    "@types/node": "^20.4.7"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "e": "^0.2.2",
+    "monocart-reporter": "^1.6.13"
+  },
+  "directories": {
+    "test": "tests"
+  }
+}
